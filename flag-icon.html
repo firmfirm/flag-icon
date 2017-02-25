@@ -36,81 +36,79 @@ A web component that can be used to display flags by passing country name or one
     const { countries, au_states, br_states, ca_provinces, de_states, es_autonomy, ru_regions, us_states, maritimeFlags, racingFlags } = window._flagIcon;
     class FlagIcon extends Polymer.Element {
       static get is() { return 'flag-icon'; }
-      static get config() {
+      static get properties() {
         return {
-          properties: {
-            aspect: {
-              value: null,
-              notify: true,
-              observer: 'refresh'
-            },
-            au: {
-              type: Boolean,
-              value: false,
-              notify: true
-            },
-            br: {
-              type: Boolean,
-              value: false,
-              notify: true
-            },
-            ca: {
-              type: Boolean,
-              value: false,
-              notify: true
-            },
-            data: {
-              value: null,
-              notify: true
-            },
-            de: {
-              type: Boolean,
-              value: false,
-              notify: true
-            },
-            es: {
-              type: Boolean,
-              value: false,
-              notify: true
-            },
-            key: {
-              value: null,
-              notify: true,
-              observer: 'refresh'
-            },
-            maritime: {
-              type: Boolean,
-              value: false,
-              notify: true
-            },
-            racing: {
-              type: Boolean,
-              value: false,
-              notify: true
-            },
-            ru: {
-              type: Boolean,
-              value: false,
-              notify: true
-            },
-            square: {
-              type: Boolean,
-              value: false,
-              notify: true,
-              observer: 'refresh'
-            },
-            src: String,
-            title: {
-              value: null
-            },
-            us: {
-              type: Boolean,
-              value: false,
-              notify: true
-            },
-            file: {
-              type: String
-            }
+          aspect: {
+            value: null,
+            notify: true,
+            observer: 'refresh'
+          },
+          au: {
+            type: Boolean,
+            value: false,
+            notify: true
+          },
+          br: {
+            type: Boolean,
+            value: false,
+            notify: true
+          },
+          ca: {
+            type: Boolean,
+            value: false,
+            notify: true
+          },
+          data: {
+            value: null,
+            notify: true
+          },
+          de: {
+            type: Boolean,
+            value: false,
+            notify: true
+          },
+          es: {
+            type: Boolean,
+            value: false,
+            notify: true
+          },
+          key: {
+            value: null,
+            notify: true,
+            observer: 'refresh'
+          },
+          maritime: {
+            type: Boolean,
+            value: false,
+            notify: true
+          },
+          racing: {
+            type: Boolean,
+            value: false,
+            notify: true
+          },
+          ru: {
+            type: Boolean,
+            value: false,
+            notify: true
+          },
+          square: {
+            type: Boolean,
+            value: false,
+            notify: true,
+            observer: 'refresh'
+          },
+          src: String,
+          title: {
+            value: null
+          },
+          us: {
+            type: Boolean,
+            value: false,
+            notify: true
+          },
+          file: {
+            type: String
           },
         };
       }
